@@ -1,14 +1,7 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+//! Rust templates for competitive programming and algorithms.
+//! Can be used for programming contests.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+#[allow(clippy::module_inception)]
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+/// Data structures module.
+pub mod data_structures;

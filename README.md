@@ -1,5 +1,5 @@
 # rcomp
-Rust templates for competitive programming. In heavy development.
+Rust templates for competitive programming and just algorithms. In heavy development.
 
 There's some more libraries like [competitive-programming-rs](https://github.com/kenkoooo/competitive-programming-rs), but we're interested in implementing them by ourselves for maximal flexibility and understanding.
 
