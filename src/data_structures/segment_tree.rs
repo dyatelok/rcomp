@@ -30,7 +30,6 @@ pub mod segment_tree {
         }
 
         pub fn update(&mut self, v: usize, x: U) {
-            assert!(0 <= v && v < self.n);
             self.data[v + self.size] = (self.update_func)(self.data[v + self.size], x);
             for i in 1..=self.log {
                 self.update_node(v >> i);
@@ -38,12 +37,10 @@ pub mod segment_tree {
         }
 
         pub fn get(&self, v: usize) -> T {
-            assert!(0 <= v && v < self.n);
             self.data[v + self.size]
         }
 
         pub fn get_all(&self, l: usize, r: usize) -> T {
-            assert!(0 <= l && l <= r && r <= self.n);
             let mut sml = self.default;
             let mut smr = self.default;
             let mut l = l + self.size;
